@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html">
+                <img id="logo" src="images/logo.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>TIC TAC TOE</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>
+                <img id="logoInfo" src="images/logo.png"/> <br />
+                אפיון ופיתוח : שיר שהינו | דור סולומון <br/>
+                אופיין ופותח במסגרת פרויקט בקורסים: <br/>
+                סביבות לימוד אינטראקטיביות 1 ותכנות אינראקטיבי 1, תשפ״ג <br/>
+                <img id="hitlogo" src="images/HIT_logo.jpeg"> <br />
+                <a href="https://www.hit.ac.il/telem/B.A">הפקולטה לטכנולוגיות למידה</a>
+                
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>  
+            <p><b>מהלך המשחק:</b> <br />
+                התאימו באמצעות לחיצה בין מילה מתוך המאגר, לתמונה המתאימה לה על הלוח. על מנת לאשר את התאמה יש ללחוץ ENTER במקלדת <br />
+                התאמה נכונה - המשבצת על הלוח תתחלף לתמונה מייצגת של אותו שחקן (אסטרונאוט או חייזר) <br />
+               התאמה שגויה - התור יעבור לשחקן היריב. תיקו - במידה ואף שחקן לא הצליח לבצע רצף של טור שורה או אלכסון במקרה כזה תוצאת המשחק היא תיקו<br /><br />
+                
+                <b>המטרה שלכם:</b><br />
+              ליצור שלושה סימנים של אסטרונאוט או חייזר הנמצאים על שורה טור או אלכסון אחד באמצעות התאמות בין מילה לתמונה.<br /><br />
+                
+                <b></b><br />
+                 <br /><br /><br />
+
+                 <b>משחק מהנה!</b><img id="emoji" src="images/SmilingFaceAndEyesEmoji_i.jpg"/><br />              
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://dorsolomo.github.io/tictactoe_game/" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
